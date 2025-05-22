@@ -1,78 +1,50 @@
-# E-Commerce Web Application using MERN Stack and Microservices Architecture
+🛍️ ElectroHub – Microservices-Based E-commerce Platform
+ElectroHub is a modern e-commerce web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and follows a microservices architecture. The system is modular, scalable, and designed for a seamless shopping experience.
 
-## Description
-This is a web application for an e-commerce store that sells games. It is built using the MERN stack and Microservices Architecture. It has a user interface for the customers to view the products and add them to their cart. The application is built using the Microservices Architecture, where each service is a separate Node.js application.
+🔧 Technologies Used
+Frontend: React.js (Vite), Tailwind CSS
 
-## Installation
+Backend: Node.js, Express.js
 
-Use the package manager [npm](https://www.npmjs.com/) to install dependencies.
+Database: MongoDB
 
-```bash
-npm install
-```
+Architecture: Microservices
 
-## Usage
+Authentication: JWT (JSON Web Token)
 
-1. Create a .env file in the root directory and add the following environment variables (replace all #### with your own values):
-```bash
-PORT=####
-MONGO_USERNAME=####
-MONGO_PASSWORD=####
-MONGO_CLUSTER=####
-MONGO_DBNAME=####
-ACCESS_TOKEN=####
-```
-2. Run the following command to start the application:
-```bash
-npm run dev
-```
-3. Open the following URL in your browser:
-```bash
-http://localhost:<port_no>/
-```
+🔩 Microservices Overview
+User Service (/user-service): Manages user registration, login, authentication, and profile management.
 
-4. Or you can use docker-compose to run the application:
-```bash
-docker-compose up
-```
-5. Show the running containers:
-```bash
-docker ps
-```
-6. Get the container ip address:
-```bash
-docker inspect <container_id> | grep "IPAddress"
-```
-7. Open the following URL in your browser:
-```bash
-http://<container_ip_address>:<port_no>/
-```
-8. To run the frontend application, run the following command:
-```bash
-cd frontend
-npm install
-npm run dev
-```
-9. Open the following URL in your browser:
-```bash
-http://localhost:5173/
-```
-## Products json file
-- [Products json file](https://github.com/Andrewaziz99/E-Commerce_Web_Application/blob/main/products.json)
+Product Service (/product-service): Handles product listings, product details, and inventory management.
 
-## Technologies
-- [React vite](https://vitejs.dev/)
-- [Node.js](https://nodejs.org/en/)
-- [Express](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
-- [Microservices Architecture]()
+Cart Service (/cart-service): Manages cart operations and checkout process.
 
-## Contributers 
-- [Thomas Maged](https://github.com/Thomas-Maged)
-- [Maximous Atef](https://github.com/Maxiatef)
-- [Kirollos Nessim](https://github.com/KirollosNessem)
-- [Ramez Hesham](https://github.com/RamezHesham)
-- [Yara Wael](https://github.com/yara880)
-- [Nourhane Amir](https://github.com/NourhaneAmir)
+📱 Key Screens & Features
+Home: Browse featured products and categories
+
+Product Info: View detailed product descriptions and images
+
+Cart: Add, remove, and update product quantities
+
+Checkout: Secure checkout process with cart summary
+
+Login / Register: User authentication with JWT-based login
+
+Profile: View and update user details
+
+⚙️ Features
+Microservices-based architecture for modular design
+
+RESTful APIs for inter-service communication
+
+JWT Authentication for secure access
+
+Responsive UI with modern design
+
+Persistent cart data with backend integration
+
+MongoDB for flexible and scalable data storage
+
+🚀 Getting Started
+Each service is containerized and can be run independently. Use Docker and docker-compose for local development and deployment.
+
