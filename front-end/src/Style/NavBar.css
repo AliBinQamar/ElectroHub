@@ -1,0 +1,84 @@
+.header-area {
+  background-color: #0077cc; /* blue theme */
+  position: fixed;           /* fix it to top */
+  top: 0;                   /* top of page */
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 9999;            /* on top of everything */
+  width: 100%;
+  transition: all 0.5s ease;
+  border-radius: 0;         /* remove rounded corners */
+  opacity: 1;               /* fully opaque */
+}
+
+.header-area .main-nav {
+  min-height: 70px;
+  width: 100%;
+  background-color: transparent; /* keep transparent because header-area sets bg */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 0;
+}
+
+.logo h4 {
+  color: white; /* white logo text */
+  margin: 0;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.header-area .main-nav .nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-area .main-nav .nav li {
+  margin-left: 20px;
+}
+
+.header-area .main-nav .nav li a {
+  color: white;            /* white nav links */
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 10px 15px;
+  border-radius: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover effect for nav links */
+.header-area .main-nav .nav li a:hover {
+  background-color: #005fa3; /* darker blue */
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* subtle shadow on hover */
+  transform: translateY(-2px); /* slight lift effect */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Active link style */
+.header-area .main-nav .nav li a.active {
+  background-color: #005fa3;
+  color: #ffffff;
+}
+
+.header-area .main-nav .nav li:last-child a {
+  background-color: #005fa3;
+  padding: 8px 20px;
+  border-radius: 23px;
+}
+
+.header-area .main-nav .menu-trigger {
+  display: none; /* hide menu trigger for now */
+}
+
+/* Add some top padding to body so content won't go under fixed navbar */
+body {
+  padding-top: 70px;
+}

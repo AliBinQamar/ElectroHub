@@ -1,0 +1,239 @@
+/* Base styles */
+html, body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+.newSearch {
+  height: 36px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #444; /* darker border */
+  border-radius: 5px;
+  outline: none;
+  width: 200px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* black background */
+  color: #fff; /* white text */
+}
+.page-content {
+  min-height: 100vh; /* full viewport height */
+  width: 100%;      /* full viewport width */
+  background-color: white;
+  margin: 0;         /* remove default margins */
+  padding: 20px;     /* optional padding */
+  box-sizing: border-box;
+}
+.newSearch::placeholder {
+  color: #bbb; /* lighter placeholder text */
+}
+a {
+  color: #0077cc;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #005fa3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #222;
+  font-weight: 700;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  margin: 0 0 1em 0;
+}
+
+/* Container and page-wide width */
+.wid {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Most popular section */
+.most-popular {
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 23px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.most-popular .item {
+  background-color: #f0f0f0;
+  padding: 30px 15px;
+  border-radius: 23px;
+  margin-bottom: 30px;
+}
+
+.most-popular .item .item {
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.most-popular .item img {
+  border-radius: 23px;
+  width: 100%;
+  display: block;
+}
+
+.most-popular .item h4 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  display: inline-block;
+  color: #222;
+}
+
+.most-popular .item span {
+  color: #666;
+  display: block;
+  margin-top: 7px;
+  font-weight: 400;
+}
+
+.most-popular .item ul {
+  float: right;
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.most-popular .item ul li {
+  text-align: right;
+  color: #444;
+  font-size: 14px;
+}
+
+.most-popular .item ul li:first-child i {
+  color: #f1c40f; /* golden */
+}
+
+.most-popular .item ul li:last-child i {
+  color: #e91e63; /* pink */
+}
+
+.most-popular .main-button {
+  text-align: center;
+  margin-bottom: -53px;
+}
+
+/* Select dropdown and filter/search container */
+.selct {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 10px;
+  flex-wrap: wrap;
+}
+
+select {
+  background-color: #fff;
+  width: 220px;
+  height: 40px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+option {
+  color: #333;
+}
+
+/* Search icon next to input */
+.margleft {
+  font-size: 18px;
+  color: #0077cc;
+  margin-left: 6px;
+}
+
+/* Search input */
+.newSearch {
+  height: 36px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 200px;
+  box-sizing: border-box;
+  color: #333;
+}
+.heading-section.inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #0077cc; /* subtle blue underline */
+  padding-bottom: 8px;
+}
+
+.heading-section.inline h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0077cc; /* blue heading text */
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+/* Search button */
+.searchButton {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 9px 18px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive fixes */
+@media (max-width: 576px) {
+  .selct {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  select, .newSearch, .searchButton {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .margleft {
+    display: none;
+  }
+}

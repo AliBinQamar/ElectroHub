@@ -1,0 +1,72 @@
+[
+  {
+    "name": "iPhone 14",
+    "price": 999,
+    "description": "Latest Apple smartphone",
+    "category": "smartphones",
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888857.png"
+  },
+  {
+    "name": "Dell XPS 13",
+    "price": 1199,
+    "description": "High performance ultrabook laptop",
+    "category": "laptops",
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888870.png"
+  },
+  {
+    "name": "iPad Air",
+    "price": 599,
+    "description": "Lightweight tablet with powerful features",
+    "category": "tablets",
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888863.png"
+  },
+  {
+    "name": "Sony WH-1000XM4",
+    "price": 350,
+    "description": "Noise cancelling headphones",
+    "category": "headphones",
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888865.png"
+  },
+  {
+    "name": "Apple Watch Series 8",
+    "price": 399,
+    "description": "Smartwatch with fitness tracking",
+    "category": "smartwatches",
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888868.png"
+  },
+  {
+    "name": "Canon EOS R6",
+    "price": 2499,
+    "description": "Full-frame mirrorless camera",
+    "category": "cameras",
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888872.png"
+  },
+  {
+    "name": "PlayStation 5",
+    "price": 499,
+    "description": "Next-gen gaming console",
+    "category": "gaming",
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888922.png"
+  },
+  {
+    "name": "Anker PowerCore 10000",
+    "price": 25,
+    "description": "Portable charger",
+    "category": "accessories",
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888940.png"
+  },
+  {
+    "name": "Dyson V11 Vacuum",
+    "price": 599,
+    "description": "Cordless vacuum cleaner",
+    "category": "home_appliances",
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888950.png"
+  },
+  {
+    "name": "Oura Ring Gen3",
+    "price": 299,
+    "description": "Smart ring for health tracking",
+    "category": "wearable_tech",
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888960.png"
+  }
+]
